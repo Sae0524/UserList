@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+ import User from './User';
+ import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ class App extends React.Component{
+  state = {
+    editForm: false
+  }
+  render() {
+    return (
+      <div className="App">
+        <header>
+            <div class="status-col">
+               <label> Name </label>
+            </div>
+            <div class="progress-col">
+		           <label> Email </label>
+		        </div>
+            <div class="progress-col">
+		           <label> Phrase </label>
+		        </div>
+	      </header>
+        <main>
+            <ul className="userList">
+              <User name="Sae" adress="Kattie Turnpike" phrase="Centralized empowering task-force"/>
+            </ul>
+        </main>
+      </div>
+    )
+  } 
 }
 
 export default App;

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,37 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* .App {
+  font-family: "Open Sans", sans-serif;
+	background: #80afce65;
+} */
+
+header {
+  display: flex;
+	align-items: center;	
+	font-size: 1em;
+	font-weight: 600;
+	color: #3333;
+	padding: 20px;
+	box-sizing: border-box;
+	user-select: none;
+	text-align: center;
 }
+
+label {
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
